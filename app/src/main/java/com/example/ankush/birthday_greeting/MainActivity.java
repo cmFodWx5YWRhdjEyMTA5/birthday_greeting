@@ -1,5 +1,6 @@
 package com.example.ankush.birthday_greeting;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -19,11 +20,9 @@ public class MainActivity extends AppCompatActivity {
 
         EditText name = (EditText) findViewById(R.id.name);
         String newName = name.getText().toString();
-
-        setContentView(R.layout.layout2);
-        TextView message= (TextView) findViewById(R.id.newMessage);
-        message.setText("Happy Birthday "+newName);
-
+        Intent newActivity= new Intent(this,Layout2Activity.class);
+        newActivity.putExtra("key","Happpy Birthday"+newName);
+        startActivity(newActivity);
 
     }
 
