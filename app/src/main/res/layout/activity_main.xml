@@ -34,10 +34,9 @@
         android:id="@+id/greet"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignEnd="@+id/message"
         android:layout_below="@+id/name"
-        android:layout_marginEnd="91dp"
-        android:layout_marginTop="118dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="108dp"
         android:onClick="Greet"
         android:text="Greet" />
 

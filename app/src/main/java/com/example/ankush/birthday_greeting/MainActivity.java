@@ -16,10 +16,14 @@ public class MainActivity extends AppCompatActivity {
 
     public void Greet(View view)
     {
-        TextView message= (TextView) findViewById(R.id.message);
+
         EditText name = (EditText) findViewById(R.id.name);
         String newName = name.getText().toString();
+
+        setContentView(R.layout.layout2);
+        TextView message= (TextView) findViewById(R.id.newMessage);
         message.setText("Happy Birthday "+newName);
+
 
     }
 
